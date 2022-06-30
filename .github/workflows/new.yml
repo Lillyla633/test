@@ -1,0 +1,13 @@
+name: test:972295139066:github-actions-role2
+on:
+
+ workflow_dispatch: 
+
+jobs:
+   call-workflow:
+       uses: Lillyla633/geetanew/.github/workflows/test.yml@main
+       with:
+          workingdirectory: ./environments/vpc
+          initial-role-to-assume: arn:aws:iam::972295139066:role/github-oidc-role2
+          aws-region: us-east-1
+          lambda-function-name: github-oidc-auth2
