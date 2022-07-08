@@ -1,4 +1,4 @@
-name: role_test:972295139066
+name: role_test:972295139066:Infra_role
 on:
 
  workflow_dispatch: 
